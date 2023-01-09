@@ -29,18 +29,18 @@ const Footer = () => {
             <div className={classes.contactUs__item}>
               <LocationOnIcon />
               <Typography variant="body2">
-                16-4-1, New Malakpet, Near Railway Station, Hyderabad,
-                Telangana, India, 500024
+              Shri Ramdeobaba College of Engineering and Management, Ramdeo Tekdi, Gittikhadan,Katol Road,Nagpur - 440 013 (M.S.) (India)
               </Typography>
             </div>
             <div className={classes.contactUs__item}>
               <CallIcon />
-              <Typography variant="body2">+91 8500752481</Typography>
+              <Typography variant="body2">+91 9607980531/2</Typography>
+              <Typography variant="body2">(91)-(712) - 2580011</Typography>
             </div>
-            <div className={classes.contactUs__item}>
+            {/* <div className={classes.contactUs__item}>
               <MailIcon />
-              <Typography variant="body2">ieeensakcet@gmail.com</Typography>
-            </div>
+              <Typography variant="body2">work@gmail.com</Typography>
+            </div> */}
           </div>
           <div className={classes.reachUs}>
             <Typography variant="subtitle2" className={classes.title}>
@@ -48,7 +48,7 @@ const Footer = () => {
             </Typography>
             <div className={classes.icons}>
               <Link
-                href="https://twitter.com/ieeensakcet"
+                href="https://twitter.com/"
                 target="_blank"
                 rel="noopener"
                 color="inherit"
@@ -56,7 +56,7 @@ const Footer = () => {
                 <FacebookIcon />
               </Link>
               <Link
-                href="https://twitter.com/ieeensakcet"
+                href="https://twitter.com/"
                 target="_blank"
                 rel="noopener"
                 color="inherit"
@@ -64,7 +64,7 @@ const Footer = () => {
                 <TwitterIcon />
               </Link>
               <Link
-                href="https://www.instagram.com/ieeensakcet/?igshid=1rorsll9o8e06"
+                href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener"
                 color="inherit"
@@ -72,7 +72,7 @@ const Footer = () => {
               <InstagramIcon />
               </Link>
               <Link
-                href="https://www.linkedin.com/company/42773344/admin/"
+                href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener"
                 color="inherit"
@@ -83,11 +83,11 @@ const Footer = () => {
           </div>
           <div className={classes.copyright}>
             <Typography variant="body2">
-              Copyright ieeensakcet @2021 All rights reserved
+              Copyright cse/rcoem @2022 All rights reserved
             </Typography>
-            <Typography variant="body2">
+            {/* <Typography variant="body2">
               <Link
-                href="https://www.ieee.org/security-privacy.html"
+                href="#"
                 target="_blank"
                 rel="noopener"
                 color="inherit"
@@ -100,7 +100,7 @@ const Footer = () => {
               <RouterLink to='/login' className={classes.text}>
                 Member login
               </RouterLink>
-            </Typography>
+            </Typography> */}
           </div>
         </div>
       </Container>

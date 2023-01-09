@@ -23,8 +23,8 @@ export default makeStyles((theme) => ({
         fontSize: '1.8rem',
     },
     About__about__image:{
-        minWidth: '50%',
-        maxHeight: '100%',
+        maxWidth: '60%',
+        maxHeight: '60%',
     },
     About__ourCommunity: {
         display: 'flex',
@@ -40,7 +40,7 @@ export default makeStyles((theme) => ({
         borderBottom: '2px solid #000',
     },
     About__ourCommunity__pyramid:{
-        width: '100%',
+        width: '50%',
         padding: '0px 150px'
     },
     About__ourCommunity__text:{
@@ -77,7 +77,7 @@ export default makeStyles((theme) => ({
         borderBottom: '2px solid #000',
     },
     About__Work__image:{
-        width: '900px',
+        width: '400px',
     },
     About__accordion:{
         backgroundColor: '#12679b',
@@ -105,8 +105,8 @@ export default makeStyles((theme) => ({
             padding: '20px 0px',
         },
         About__Work__image:{
-            maxWidth: '100%',
-            minHeight: '100%',
+            maxWidth: '40%',
+            maxHeight: '40%',
         },
     },
     [theme.breakpoints.down('xs')]: {

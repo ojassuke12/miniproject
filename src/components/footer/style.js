@@ -15,7 +15,7 @@ export default makeStyles((theme) => ({
   mainContainer: {
     display: 'grid',
     gridTemplateColumns: '1.5fr 1fr',
-    columnGap: '180px',
+    columnGap: '35px',
     rowGap: '20px',
     color: '#ffffff',
     

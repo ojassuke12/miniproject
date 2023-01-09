@@ -21,25 +21,26 @@ const Cs = () => {
       <section className={classes.cs__groupPhoto}>
         <div className={classes.cs__groupPhoto__container}>
           <img
-            src="https://ik.imagekit.io/ieeensakcet/tr:w-1200/csGroup"
+            src="https://i.imgur.com/ae3FHdG.jpg"
             alt="grpPhoto"
             className={classes.cs__groupPhoto__container__image}
           />
         </div>
+        
         <div className={classes.header}>
           <div className={classes.header__content}>
             <div className={classes.logo}>
-              <img src={csLogo} alt="csLogo" className={classes.logo__image} />
+              <img src={"https://i.imgur.com/JUb645A.jpg"} alt="csLogo" className={classes.logo__image} />
             </div>
             <div className={classes.header__text}>
               <Typography variant="h6">
-                IEEE Computer Society is a professional society of IEEE. Its
+                Computer Society is a professional society of RCOEM. Its
                 purpose and scope is “to advance the theory, practice, and
                 application of computer and information processing science and
                 technology” and the “professional standing of its members.”
               </Typography>
               <Link
-                href="https://www.computer.org/"
+                href="#"
                 rel="noopener"
                 target="_blank"
               >
@@ -74,7 +75,7 @@ const Cs = () => {
       </section>
       <section className={classes.cs__benefits}>
         <Typography variant="h4" className={classes.cs__benefits__text}>
-          CS MEMBERSHIP OFFERS
+          What does CSI do ?
         </Typography>
         <div className={classes.cs__benefits__cards}>
           <Paper elevation={8} className={classes.cs__benefits__cards__paper}>
@@ -115,10 +116,10 @@ const Cs = () => {
       </section>
       <section className={classes.cs__website}>
         <Typography variant="h5">
-          To visit IEEE Hyderabad section CS Chapter website
+          To visit CSI Chapter website
         </Typography>
         <Link
-          href="https://ieeehyderabad.org/chapters-ag/computer-society"
+          href="https://www.linkedin.com/company/compusys-student-society-rcoem-cse/about/"
           target="_blank"
           rel="noopener"
         >
@@ -133,7 +134,7 @@ const Cs = () => {
         </Link>
       </section>
       <section className={classes.cs__team}>
-        <Typography variant="h4" className={classes.cs__team__text}>Meet The Team</Typography>
+        <Typography variant="h4" className={classes.cs__team__text}>Meet The AIML Community Member In CSI</Typography>
         <div className={classes.cs__team__members}>
           {cs.map((person) => (
             <Profile 
@@ -152,19 +153,19 @@ const Cs = () => {
         <Typography variant="h4">ADVISOR MESSAGE</Typography>
         <div className={classes.cs__message__content}>
           <div className={classes.cs__message__content__person}>
-            <Avatar className={classes.cs__message__content__person__image} src="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/asma_mam_tbqioU5dh.png"/>
-            <Typography variant="h6">Ms Asma Mehdia</Typography>
+            <Avatar className={classes.cs__message__content__person__image} src="https://i.imgur.com/3PCL53n.jpg"/>
+            <Typography variant="h6">Sanskar Maheshwari</Typography>
           </div>
           <Typography
             variant="subtitle1"
             className={classes.cs__message__content__text}
           >
-            Joining IEEE is due to the fact that,you can have the smartest
+            Joining CSI is due to the fact that,you can have the smartest
             people in the world around you,but without collaboration the
             technology is not going to evolve. As a member of CS, I find the
             membership invaluable source of information and conduit for growth.
             I believe for lasting contribution to a discipline, you really need
-            to have an organization like IEEE behind you.
+            to have an organization like AIML behind you.
           </Typography>
         </div>
       </section>

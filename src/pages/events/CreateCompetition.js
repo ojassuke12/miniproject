@@ -4,7 +4,7 @@ import { auth } from "../../config/firebaseConfig";
 import { createCompetition } from "../../features/competitionSlice";
 import { logout } from "../../features/userSlice";
 
-import './CreateCompetition.css'
+import './Style1.js'
 
 function CreateCompetition() {
   const [shareImage, setShareImage] = useState();

@@ -36,11 +36,11 @@ export default makeStyles((theme) => ({
     // gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
     gridTemplateColumns: "repeat(4, 1fr)",
     "&>div:nth-child(n+1):nth-child(odd):nth-child(-n+4)": {
-      backgroundColor: "#e6e9eb",
+      backgroundColor: "#cad1d5",
       color: "#000",
     },
     "&>div:nth-child(n+5):nth-child(even):nth-child(-n+8)": {
-      backgroundColor: "#e6e9eb",
+      backgroundColor: "#cad1d5",
       color: "#000",
     },
   },

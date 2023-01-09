@@ -3,10 +3,9 @@ import { Button, Container, Paper, Typography } from "@material-ui/core";
 import useStyles from "./styles";
 import dartImage from "../../images/homePage/dart.webp";
 import telescopeImage from "../../images/homePage/telescope.webp";
-import csLogo from "../../images/homePage/IEEE-CS_Logo.png";
-import rasLogo from "../../images/homePage/ieee-ras-logo.png";
-import wieLogo from "../../images/homePage/ieee-wie-logo.png";
+import default_img from "../../images/homePage/default.png";
 import { Link } from "react-router-dom";
+
 
 function Home() {
   const classes = useStyles();
@@ -18,16 +17,16 @@ function Home() {
         className={classes.container}
         disableGutters={true}
       >
-        <img src="https://ik.imagekit.io/ieeensakcet/tr:w-1200/IEEE_SB_grsC7EGvB.webp" alt="ieee_sb" className={classes.container__image} />
+        <img src="https://i.imgur.com/kLsf3Rh.jpg" alt="ieee_sb" className={classes.container__image} />
         <div className={classes.header}>
           <div className={classes.header__text}>
-            <Typography variant="h4">IEEE STUDENT BRANCH</Typography>
+            <Typography variant="h4">AIML Branch</Typography>
             <Typography variant="body1">
-              Nawab Shah Alam Khan College of Engineering and Technology
+              Ramdeobaba College of Engineering and Management, Nagpur
             </Typography>
           </div>
-          <Link to="/joinus" className={classes.link}>
-            <Button
+          <a href="https://forms.gle/CGzNY15s37wPUSgZ6" style={{ textDecoration: 'none' }}>
+            <Button link
               variant="contained"
               color="primary"
               size="large"
@@ -35,7 +34,7 @@ function Home() {
             >
               Join Us
             </Button>
-          </Link>
+          </a>
         </div>
       </Container>
       <section className={classes.mainSection}>
@@ -45,7 +44,7 @@ function Home() {
               <Typography variant="h4">Mission</Typography>
               <Typography variant="subtitle1">
                 To promote students empowerment, develop professional skills ,
-                organise diverse events and work towards IEEE's mission.
+                organise diverse events and work toward different domains of Computer Science.
               </Typography>
             </header>
             <div>
@@ -70,7 +69,7 @@ function Home() {
               <Typography variant="h4">Vision</Typography>
               <Typography variant="subtitle1">
                 We envision offering a relevant platform to learn and seek
-                industrial experience, personal development, social welfare and
+                knowledge about this branch, personal development, social welfare and
                 help explore various engineering fields.
               </Typography>
             </header>
@@ -106,7 +105,7 @@ function Home() {
             </div>
           </Paper>
         </section> */}
-        <section className={classes.events__section}>
+        {/* <section className={classes.events__section}>
           <Typography variant="h4" className={classes.events__header}>
             EVENTS
           </Typography>
@@ -230,7 +229,7 @@ function Home() {
               </header>
             </Paper>
           </div>
-        </section>
+        </section> */}
         <section className={classes.ourChapters}>
           <Typography variant="h4" className={classes.ourChapters__header}>
             OUR CHAPTERS
@@ -238,7 +237,7 @@ function Home() {
           <div className={classes.chapter_cards}>
             <Paper elevation={12} className={classes.chapters}>
               <img
-                src={csLogo}
+                src="https://i.imgur.com/JUb645A.jpg"
                 loading="lazy"
                 alt="chapter_image"
                 className={classes.chapter_logo}
@@ -246,7 +245,7 @@ function Home() {
             </Paper>
             <Paper elevation={12} className={classes.chapters}>
               <img
-                src={wieLogo}
+                src="https://i.imgur.com/LJZSWZk.jpg"
                 loading="lazy"
                 alt="chapter_image"
                 className={classes.chapter_logo}
@@ -254,7 +253,7 @@ function Home() {
             </Paper>
             <Paper elevation={12} className={classes.chapters}>
               <img
-                src={rasLogo}
+                src="https://i.imgur.com/AkJ25oC.jpg"
                 loading="lazy"
                 alt="chapter_image"
                 className={classes.chapter_logo}
@@ -271,21 +270,15 @@ function Home() {
         <div className={classes.cards}>
           <Paper elevation={12} className={classes.card}>
             <Typography variant="h3" className={classes.red}>
-              45+
+              500+
             </Typography>
             <Typography variant="body1">Student Members</Typography>
           </Paper>
           <Paper elevation={12} className={classes.card}>
             <Typography variant="h3" className={classes.red}>
-              40+
+              10+
             </Typography>
             <Typography variant="body1">Events</Typography>
-          </Paper>
-          <Paper elevation={12} className={classes.card}>
-            <Typography variant="h3" className={classes.red}>
-              5
-            </Typography>
-            <Typography variant="body1">Professional Members</Typography>
           </Paper>
           <Paper elevation={12} className={classes.card}>
             <Typography variant="h3" className={classes.red}>
@@ -298,8 +291,7 @@ function Home() {
           Ready to get started?
         </Typography>
         <Typography variant="h6" className={classes.text}>
-          Become an IEEE Member to join the first student community of Nawab
-          Shah Alam Khan college of Engineering and Technology.
+          Become AIML Member to join the first student community of Ramdeobaba College of Engineering and Management
         </Typography>
         <Link to="/joinus" className={classes.link}>
           <Button

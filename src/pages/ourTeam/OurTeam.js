@@ -8,9 +8,8 @@ import { Carousel } from "react-responsive-carousel";
 import Profile from "../../components/profile/profile";
 //data file of members
 import {
-  excom,
+  Faculty,
   programCommittee,
-  socialMediaCommittee,
   membershipCommittee,
 } from "../../data/profile";
 
@@ -26,36 +25,24 @@ const OurTeam = () => {
           <Button
             variant="contained"
             className={classes.OurTeam__headers__committee}
-            href="#ecxom"
+            href="#Faculty"
           >
-            Executive Committee
+            Faculty
           </Button>
           <Button
             variant="contained"
             className={classes.OurTeam__headers__committee}
             href="#program"
           >
-            Program Committee
-          </Button>
-          <Button
-            variant="contained"
-            className={classes.OurTeam__headers__committee}
-            href="#socialMedia"
-          >
-            Social Media Committee
-          </Button>
-          <Button
-            variant="contained"
-            className={classes.OurTeam__headers__committee}
-            href="#membership"
-          >
-            Membership Committee
+            Event Committee
           </Button>
         </div>
       </section>
-      <section className={classes.OurTeam__group} id="excom">
+
+
+      <section className={classes.OurTeam__group}>
         <Typography variant="h4" className={classes.OurTeam__title}>
-          Executive Committee
+          Faculty
         </Typography>
         <Carousel
           autoPlay={true}
@@ -64,7 +51,7 @@ const OurTeam = () => {
           interval={5000}
         >
           <div className={classes.Ourteam__group__team}>
-            {excom.slice(0, 5).map((person) => (
+            {Faculty.slice(0, 5).map((person) => (
               <Profile
                 key={person.name}
                 name={person.name}
@@ -76,19 +63,7 @@ const OurTeam = () => {
             ))}
           </div>
           <div className={classes.Ourteam__group__team}>
-            {excom.slice(5, 11).map((person) => (
-              <Profile
-                key={person.name}
-                name={person.name}
-                designation={person.designation}
-                linkedInURL={person.linkedInURL}
-                emailURL={person.emailURL}
-                image={person.image}
-              />
-            ))}
-          </div>
-          <div className={classes.Ourteam__group__team}>
-            {excom.slice(11, 17).map((person) => (
+            {Faculty.slice(5, 11).map((person) => (
               <Profile
                 key={person.name}
                 name={person.name}
@@ -101,9 +76,9 @@ const OurTeam = () => {
           </div>
         </Carousel>
       </section>
-      <section className={classes.OurTeam__group} id="program">
+      <section className={classes.OurTeam__group}>
         <Typography variant="h4" className={classes.OurTeam__title}>
-          Program Committee
+          Event Committee 
         </Typography>
         <Carousel
           autoPlay={true}
@@ -123,104 +98,10 @@ const OurTeam = () => {
               />
             ))}
           </div>
-          <div className={classes.Ourteam__group__team}>
-            {programCommittee.slice(6, 13).map((person) => (
-              <Profile
-                key={person.name}
-                name={person.name}
-                designation={person.designation}
-                linkedInURL={person.linkedInURL}
-                emailURL={person.emailURL}
-                image={person.image}
-              />
-            ))}
-          </div>
         </Carousel>
       </section>
-      <section className={classes.OurTeam__group} id="socialMedia">
-        <Typography variant="h4" className={classes.OurTeam__title}>
-          Social Media Committee
-        </Typography>
-        <Carousel
-          autoPlay={true}
-          infiniteLoop={true}
-          showThumbs={false}
-          interval={5000}
-        >
-          <div className={classes.Ourteam__group__team}>
-            {socialMediaCommittee.slice(0, 6).map((person) => (
-              <Profile
-                key={person.name}
-                name={person.name}
-                designation={person.designation}
-                linkedInURL={person.linkedInURL}
-                emailURL={person.emailURL}
-                image={person.image}
-              />
-            ))}
-          </div>
-          <div className={classes.Ourteam__group__team}>
-            {socialMediaCommittee.slice(6, 13).map((person) => (
-              <Profile
-                key={person.name}
-                name={person.name}
-                designation={person.designation}
-                linkedInURL={person.linkedInURL}
-                emailURL={person.emailURL}
-                image={person.image}
-              />
-            ))}
-          </div>
-        </Carousel>
-      </section>
-      <section className={classes.OurTeam__group} id="membership">
-        <Typography variant="h4" className={classes.OurTeam__title}>
-          Membership Committee
-        </Typography>
-        <Carousel
-          autoPlay={true}
-          infiniteLoop={true}
-          showThumbs={false}
-          interval={5000}
-        >
-          <div className={classes.Ourteam__group__team}>
-            {membershipCommittee.slice(0, 4).map((person) => (
-              <Profile
-                key={person.name}
-                name={person.name}
-                designation={person.designation}
-                linkedInURL={person.linkedInURL}
-                emailURL={person.emailURL}
-                image={person.image}
-              />
-            ))}
-          </div>
-          <div className={classes.Ourteam__group__team}>
-            {membershipCommittee.slice(4, 8).map((person) => (
-              <Profile
-                key={person.name}
-                name={person.name}
-                designation={person.designation}
-                linkedInURL={person.linkedInURL}
-                emailURL={person.emailURL}
-                image={person.image}
-              />
-            ))}
-          </div>
-          <div className={classes.Ourteam__group__team}>
-            {membershipCommittee.slice(8, 12).map((person) => (
-              <Profile
-                key={person.name}
-                name={person.name}
-                designation={person.designation}
-                linkedInURL={person.linkedInURL}
-                emailURL={person.emailURL}
-                image={person.image}
-              />
-            ))}
-          </div>
-        </Carousel>
-      </section>
+      
+    
 
       {/* <section className={classes.OurTeam__group} id="alumni">
         <Typography variant="h4" className={classes.OurTeam__title}>

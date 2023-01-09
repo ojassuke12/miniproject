@@ -32,15 +32,15 @@ function About() {
     <div className={classes.About}>
       <Paper elevation={10} className={classes.About__about}>
         <img
-          src="https://ik.imagekit.io/ieeensakcet/tr:w-400/college_BKdkFH2fF.webp"
+          src="https://i.imgur.com/of53LT6.jpg"
           alt="college"
           className={classes.About__about__image}
         />
         <div className={classes.About__about__text}>
           <Typography variant="h6">
             <span className={classes.About__about__text__header}>
-              IEEE Student Branch of Nawab Shah Alam Khan College of Engineering
-              and Technology
+              AIML Student Branch of Shri Ramdeobaba College of Engineering
+              and Management
             </span>{" "}
             is a student community that strives to inform, learn, entertain, and
             inspire action through the events and experiences we create. We
@@ -67,21 +67,14 @@ function About() {
           OUR COMMUNITY
         </Typography>
         <img
-          src="https://ik.imagekit.io/ieeensakcet/pyramid_gEz6JFkMv.svg"
+          src="https://i.imgur.com/YNBzywy.jpg"
           alt="pyramid"
           loading="lazy"
           className={classes.About__ourCommunity__pyramid}
         />
         <div className={classes.About__ourCommunity__text}>
           <Typography variant="h6">
-            IEEE has its community around the globe, with more than 420,000 IEEE
-            members. The world map has been divided into 10 regions and we come
-            under Region 10 (Asia and Pacific), we are located in India and
-            belong to the IEEE India Council which acts as a consortium of 12
-            IEEE Sections located in different states of the country. IEEE
-            Hyderabad Section foresees the activities in Telangana and Andhra
-            Pradesh, different IEEE organizational units come under the section
-            which includes IEEE Student Branches of colleges and universities.
+          Computer Science & Engineering with specialization in Artificial Intelligence & Machine Learning (AL & ML) is a four years undergraduate course, designed to enable students to build intelligent machines, software, or applications with a cutting-edge combination of Artificial Intelligence, Machine learning and Deep Learning technologies after equipping them with the basic fundamentals of Computer Science and Engineering.
           </Typography>
         </div>
       </Paper>
@@ -165,10 +158,9 @@ function About() {
       </section>
       <Paper elevation={10} className={classes.About__Work}>
         <Typography variant="h4" className={classes.About__Work__header}>
-          HOW WE WORK
         </Typography>
         <img
-          src="https://ik.imagekit.io/ieeensakcet/tr:w-800/work_RmD9D29gs7.png"
+          src="https://i.imgur.com/hhDe6eE.jpg"
           alt="work"
           loading="lazy"
           className={classes.About__Work__image}
@@ -182,11 +174,11 @@ function About() {
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <Typography variant="h6">Executive Committee (ExCOM)</Typography>
+              <Typography variant="h6">Faculty</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Comprises of faculty advisors and core student members who hold
+                Comprises of faculty members who hold
                 officer positions and maintain the workflow.
               </Typography>
             </AccordionDetails>

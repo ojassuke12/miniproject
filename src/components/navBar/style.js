@@ -11,9 +11,9 @@ export default makeStyles((theme) => ({
   },
   navbar__logo: {
     backgroundImage:
-      'url("https://ik.imagekit.io/ieeensakcet/tr:h-70/ieee_bDdem9m3j.png")',
-    height: "70px",
-    width: "222px",
+      'url("https://i.imgur.com/a4w0PtN.png")',
+      maxwidth:"100%",
+      maxheight:"100%",
   },
   navbar__list: {
     display: "flex",
@@ -84,7 +84,7 @@ export default makeStyles((theme) => ({
     },
     navbar__logo: {
       backgroundImage:
-        'url("https://ik.imagekit.io/ieeensakcet/tr:h-50/ieee_bDdem9m3j.png")',
+        'url("https://i.imgur.com/V30J2lN.png")',
       height: "50px",
       width: "159px",
     },

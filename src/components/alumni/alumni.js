@@ -10,8 +10,8 @@ function Profile({ name, designation, linkedInURL, image }) {
   return (
     <div className={classes.profile}>
       <Avatar alt="Remy Sharp" src={image} className={classes.profile__image} />
-      <Typography variant="h6">{name}</Typography>
-      <Typography variant="button">{designation}</Typography>
+      {/* <Typography variant="subtitle2">{name}</Typography> */}
+      <div className={classes.profile__name}>{name}</div>
       <div className={classes.profile__socialIcons}>
         {/* {linkedInURL ? (
           <Link

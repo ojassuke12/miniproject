@@ -17,12 +17,13 @@ export default makeStyles((theme) => ({
   },
   cs__groupPhoto__container:{
     display: "flex",
+    justifyContent: "center",
   },
   cs__groupPhoto__container__image: {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    maxHeight: "100%",
-    minWidth: "100%",
+    // Height:"50%",
+    // left:"50"
   },
   header: {
     width: "100%",

@@ -57,38 +57,11 @@ const NavBar = () => {
             <ListItemText primary="ABOUT US" />
           </Link>
         </ListItem>
-        <ListItem button onClick={handleClicks}>
-          <ListItemText primary="OUR EVENTS" className={classes.text} />
-          {opens ? (
-            <ExpandLess className={classes.buttonR} />
-          ) : (
-            <ExpandMore className={classes.buttonR} />
-          )}
+        <ListItem button to="/Events">
+          <Link to="/Events" className={classes.text}>
+            <ListItemText primary="Events" />
+          </Link>
         </ListItem>
-        <Collapse in={opens} timeout="auto" unmountOnExit>
-          <List component="div" disablePadding>
-            <ListItem button className={classes.nested}>
-              <Link to="/webinars" className={classes.text}>
-                <ListItemText primary="WEBINARS" />
-              </Link>
-            </ListItem>
-            <ListItem button className={classes.nested}>
-              <Link to="/quizzes" className={classes.text}>
-                <ListItemText primary="QUIZES" />
-              </Link>
-            </ListItem>
-            <ListItem button className={classes.nested}>
-              <Link to="/competitions" className={classes.text}>
-                <ListItemText primary="COMPETITIONS" />
-              </Link>
-            </ListItem>
-            <ListItem button className={classes.nested}>
-              <Link to="/workshops" className={classes.text}>
-                <ListItemText primary="WORKSHOPS" />
-              </Link>
-            </ListItem>
-          </List>
-        </Collapse>
         <ListItem button onClick={handleClick}>
           <ListItemText primary="OUR CHAPTERS" className={classes.text} />
           {open ? (
@@ -102,11 +75,6 @@ const NavBar = () => {
             <ListItem button className={classes.nested}>
               <Link to="/cs" className={classes.text}>
                 <ListItemText primary="CS" />
-              </Link>
-            </ListItem>
-            <ListItem button className={classes.nested}>
-              <Link to="/wie" className={classes.text}>
-                <ListItemText primary="WIE" />
               </Link>
             </ListItem>
             <ListItem button className={classes.nested}>
@@ -135,9 +103,9 @@ const NavBar = () => {
       <nav className={classes.navbar}>
         <Link to="/">
           <div
-            // src="https://ik.imagekit.io/ieeensakcet/tr:h-70/ieee_bDdem9m3j.png"
+            src="https://i.imgur.com/a4w0PtN.png"
             className={classes.navbar__logo}
-            // alt="logo"
+            alt="logo"
           />
         </Link>
         <ul className={classes.navbar__list}>
@@ -153,12 +121,12 @@ const NavBar = () => {
           </li>
           <li className={`${classes.navbar__list__listItem} ${classes.hover}`}>
             <Link
-              to="/#events"
+              to="/Events"
               className={classes.navbar__list__listItem__link}
             >
               EVENTS
             </Link>
-            <Paper
+            {/* <Paper
               elevation={3}
               className={`${classes.subListItem} subListItem`}
             >
@@ -171,36 +139,12 @@ const NavBar = () => {
                     WEBINARS
                   </Link>
                 </li>
-                <li className={classes.navbar__list__listItem}>
-                  <Link
-                    to="/quizzes"
-                    className={classes.navbar__list__listItem__link}
-                  >
-                    QUIZZES
-                  </Link>
-                </li>
-                <li className={classes.navbar__list__listItem}>
-                  <Link
-                    to="/competitions"
-                    className={classes.navbar__list__listItem__link}
-                  >
-                    COMPETITIONS
-                  </Link>
-                </li>
-                <li className={classes.navbar__list__listItem}>
-                  <Link
-                    to="/workshops"
-                    className={classes.navbar__list__listItem__link}
-                  >
-                    WORKSHOPS
-                  </Link>
-                </li>
               </ul>
-            </Paper>
+            </Paper> */}
           </li>
           <li className={`${classes.navbar__list__listItem} ${classes.hover}`}>
             <Link to="/cs" className={classes.navbar__list__listItem__link}>
-              OUR CHAPTERS
+              Club Students
             </Link>
             <Paper
               elevation={3}
@@ -215,22 +159,6 @@ const NavBar = () => {
                     COMPUTER SOCIETY
                   </Link>
                 </li>
-                <li className={classes.navbar__list__listItem}>
-                  <Link
-                    to="/ras"
-                    className={classes.navbar__list__listItem__link}
-                  >
-                    RAS
-                  </Link>
-                </li>
-                <li className={classes.navbar__list__listItem}>
-                  <Link
-                    to="/wie"
-                    className={classes.navbar__list__listItem__link}
-                  >
-                    WIE
-                  </Link>
-                </li>
               </ul>
             </Paper>
           </li>
@@ -240,6 +168,13 @@ const NavBar = () => {
               className={classes.navbar__list__listItem__link}
             >
               OUR TEAM
+            </Link>
+          </li>
+          <li className={classes.navbar__list__listItem}>
+            <Link
+              to="/alumni"
+              className={classes.navbar__list__listItem__link}>
+              Alumni
             </Link>
           </li>
           <li className={classes.navbar__list__listItem}>

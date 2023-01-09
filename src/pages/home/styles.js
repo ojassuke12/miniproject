@@ -18,8 +18,7 @@ export default makeStyles((theme) => ({
   container__image: {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    maxHeight: "100%",
-    minWidth: "100%",
+    height:650
   },
   mainSection: {
     width: "70%",
